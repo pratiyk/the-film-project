@@ -1,14 +1,5 @@
 .App {
-  .first-color { 
-    background: #31EC56; 
-  }
-    
-  .second-color { 
-    background: #EF036C; 
-  }
-  
-  .third-color { 
-    background: #EE72F8; 
-  }
-  
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
 }
