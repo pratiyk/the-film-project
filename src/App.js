@@ -5,11 +5,13 @@ import Home from './pages/home/home';
 import MovieList from './components/movieList/movieList';
 import Movie from './pages/movieDetail/movie';
 
+
+
 function App() {
   return (
     <div className="App">
         <Router>
-          <Header />
+          <Header/>
             <Routes>
                 <Route index element={<Home />}></Route>
                 <Route path="movie/:id" element={<Movie />}></Route>
