@@ -4,9 +4,9 @@ Welcome to The Film Project! This is a web application built using React.js that
 
 ## Features
 
-- Keep a watchlist of films you’d like to see.
-- Rate, review and tag films.
-- Create lists/collections on any given topic. 
+-   Keep a watchlist of films you’d like to see.
+-   Rate, review and tag films.
+-   Create lists/collections on any given topic.
 
 ## Installation
 
@@ -18,7 +18,7 @@ Welcome to The Film Project! This is a web application built using React.js that
 
 ## Technologies Used
 
-- React.js: A JavaScript library for building user interfaces.
-- React Router: Declarative routing for React applications.
-- Material-UI: React components for faster and easier web development.
-- Firebase: Backend-as-a-Service platform for authentication and data storage
+-   React.js: A JavaScript library for building user interfaces.
+-   React Router: Declarative routing for React applications.
+-   Material-UI: React components for faster and easier web development.
+-   Firebase: Backend-as-a-Service platform for authentication and data storage
