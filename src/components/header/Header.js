@@ -1,10 +1,12 @@
-import React from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
+import SearchBar from "../SearchBar/SearchBar";
+
 
 const Header = () => {
     return (
+        
         
         <div className="header">
             <div className="headerLeft">
@@ -20,10 +22,7 @@ const Header = () => {
                 <Link to="/movies/upcoming" style={{ textDecoration: "none" }}>
                     <span>Upcoming</span>
                 </Link>
-                <div className="searchBar">
-                    <input type="text" />
-                    <button>Show All</button>
-                </div>
+                <SearchBar />
             </div>
         </div>
     );
