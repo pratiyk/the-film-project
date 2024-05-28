@@ -1,7 +1,6 @@
 import "./Header.css";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 import logo from "../../assets/logo.png";
-import SearchBar from "../SearchBar/SearchBar";
 
 
 const Header = () => {
@@ -22,7 +21,6 @@ const Header = () => {
                 <Link to="/movies/upcoming" style={{ textDecoration: "none" }}>
                     <span>Upcoming</span>
                 </Link>
-                <SearchBar />
             </div>
         </div>
     );

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "./card.css";
 import { Link } from "react-router-dom";
-import star from "../../assets/star-pixel.png";
 
 export const Cards = ({ movie }) => {
     const [isLoading, setIsLoading] = useState(true);

@@ -1,3 +1,12 @@
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+}
+
 .movie {
     width: 100%;
     position: relative;
@@ -8,135 +17,142 @@
 
 .movie__intro {
     width: 80%;
+    position: relative;
 }
 
 .movie__backdrop {
+    margin-top: 5px;
     width: 100%;
     height: 500px;
     object-fit: cover;
     object-position: 0 35%;
+    border-radius: 10px;
 }
 
 .movie__detail {
+    display: flex;
     align-items: center;
     width: 75%;
-    display: flex;
     position: relative;
     bottom: 225px;
+    color: #ffffff;
 }
 
-.movie__detailLeft {
-    margin-right: 30px;
+.movie__detailLeft,
+.movie__detailRight {
+    flex: 1;
+    min-width: 300px;
+}
+
+.movie__posterBox {
+    text-align: center;
 }
 
 .movie__poster {
     width: 300px;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.86) 0px 22px 40px 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.movie__detailRight {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    height: 450px;
-    justify-content: space-between;
-}
-
-.movie__detailRightTop > div {
-    text-shadow: 0px 0px 5px #000000;
-    margin-bottom: 0.5rem;
+.movie__detailRightTop {
+    margin-bottom: 20px;
 }
 
 .movie__name {
-    font-weight: 600;
-    font-size: 3rem;
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.movie__tagline {
+    font-style: italic;
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+.movie__rating {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #ffba00;
 }
 
 .movie__voteCount {
-    margin-left: 1rem;
+    margin-left: 10px;
+    font-size: 0.8em;
+    color: #666;
+}
+
+.movie__runtime,
+.movie__releaseDate {
+    margin-top: 10px;
+    font-size: 1em;
 }
 
 .movie__genres {
-    margin: 1.25rem 0;
+    margin-top: 10px;
 }
 
 .movie__genre {
-    padding: 0.5rem;
-    border: 2px solid white;
-    border-radius: 20px;
-    margin-right: 1rem;
-}
-
-.movie__detailRightBottom {
-    margin: 2rem 0;
-    flex: 0.8;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #9579db;
+    color: white;
+    border-radius: 5px;
+    font-size: 0.9em;
 }
 
 .synopsisText {
-    font-size: 1.5rem;
-    margin-bottom: 1.25rem;
-    font-weight: 600;
-    display: flex;
-    position: relative;
-    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
 }
-.synopsisText > div:last-of-type {
-    margin-left: auto;
+
+.movie__video {
+    position: relative;
+    max-width: 100%;
+    border-radius: 10px;
+    bottom: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .movie__links {
-    position: relative;
-    bottom: 120px;
-    display: flex;
-    justify-content: space-between;
-    width: 75%;
+    margin-top: 20px;
 }
 
 .movie__heading {
-    font-size: 2.2rem;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .movie__Button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.8rem 2rem;
-    border-radius: 20px;
-    cursor: pointer;
-    width: 150px;
-    color: black;
-    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 15px;
+    background-color: #a788ef;
+    color: white;
+    border-radius: 5px;
+    font-size: 1em;
+    text-decoration: none;
+    transition: background-color 0.3s;
 }
 
-.movie__homeButton {
-    background-color: rgb(255, 0, 0);
-}
-
-.movie__imdbButton {
-    background-color: #f3ce13;
-}
-
-.newTab {
-    margin-left: 1.4rem;
-}
-
-.movie__production {
-    width: 85%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    margin-bottom: 4rem;
-}
-
-.movie__productionComapany {
-    width: 200px;
-    margin: 2rem;
+.movie__Button:hover {
+    background-color: #9579db;
 }
 
 .productionCompanyImage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.movie__productionCompany {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 5px;
 }

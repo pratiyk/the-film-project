@@ -4,11 +4,12 @@
     position: relative;
     border-radius: 10px;
     overflow: hidden;
-    margin: 0.19rem;
+    margin: 0.5rem;
     cursor: pointer;
     min-width: 200px;
     height: 300px;
     z-index: 0;
+    color: white;
     border: 1px solid rgb(99, 99, 99);
 }
 
@@ -31,10 +32,10 @@
     position: absolute;
     padding: 0 1rem 1rem 1rem;
     bottom: 0px;
-    height: 290px;
+    height: 100px;
     display: flex;
     flex-direction: column;
-    width: 85%;
+    width: 100%;
     justify-content: flex-end;
     background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 1));
     opacity: 0;
@@ -49,6 +50,7 @@
     font-weight: 900;
     font-size: 1rem;
     margin-bottom: 0.4rem;
+    color: white;
 }
 
 .card__runtime {
@@ -58,47 +60,66 @@
 
 .card__rating {
     float: right;
+    color: white;
 }
 
 .card__description {
     font-style: italic;
     font-size: 0.75rem;
     margin-bottom: 0.25rem;
+    color: white;
 }
 
-.SearchBar {
-    input,
-    button {
-        margin: auto;
-        outline: none;
-        border: none;
-        border-radius:  10px;
-        position: absolute;
-        justify-content: flex-end;
-        transform: translate(60%, -50%);
-        text-align: center;
-        flex: content;
-    }
-    > input {
-        height: 25px;
-        width: 25%;
-        padding: 0 0px;
-        box-shadow: 1px 1px 6px -2px grey;
-        left: 50%;
-        font-size: 17px;
-        font-family: "Courier New", Courier, monospace;
-        &::placeholder {
-            font-size: 16px;
-        }
-    }
-    > button {
-        padding: 0 25px;
-        height: 25px;
-        left: 80%;
-        font-family: "Courier New", Courier, monospace;
-        font-size: 15px;
-        background-color: #9579db;
-        cursor: pointer;
-        font-weight: bolder;
-    }
+.movies-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-box input,
+.search-box button {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.search-box input {
+    height: 25px;
+    width: 25%;
+    padding: 0 10px;
+    box-shadow: 1px 1px 6px -2px grey;
+    font-size: 17px;
+}
+
+.search-box button {
+    padding: 0 25px;
+    height: 25px;
+    margin-left: 10px;
+    color: white;
+    background-color: #9579db;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.search-box input::placeholder {
+    font-size: 16px;
+}
+
+.search-box input:focus {
+    outline: none;
+    border: 2px solid #9579db;
+    box-shadow: 0 0 5px #9579db;
+}
+
+.search-box button:hover {
+    background-color: #7d5fae;
 }

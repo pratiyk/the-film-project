@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useNavigate } from 'react-router-dom'; 
 import './SearchBar.css';
 
 const SearchBar = () => {
   const [query, setQuery] = useState('');
   const [movies, setMovies] = useState([]);
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate(); 
 
   const searchMovies = async (e) => {
     e.preventDefault();
@@ -16,7 +16,8 @@ const SearchBar = () => {
     try {
       const res = await axios.get(url);
       setMovies(res.data.results);
-    } catch (err) {
+    }
+     catch (err) {
       console.error(err);
     }
   };
@@ -26,39 +27,40 @@ const SearchBar = () => {
   };
 
   return (
-    <form onSubmit={searchMovies}>
+    <form onSubmit={searchMovies} className="search-box">
       <input
         type="text"
         name="query"
-        placeholder="Search for a movie"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       />
       <button type="submit">Show All</button>
-      {movies.map((movie) => (
-        <div key={movie.id} className="cards" onClick={() => handleCardClick(movie.id)}>
-          <img
-            className="cards__img"
-            src={`https://image.tmdb.org/t/p/original${movie ? movie.poster_path : ""}`}
-            alt={movie.title}
-          />
-          <div className="cards__overlay">
-            <div className="card__title">
-              {movie ? movie.original_title : ""}
-            </div>
-            <div className="card__runtime">
-              {movie ? movie.release_date : ""}
-              <span className="card__rating">
-                {movie ? movie.vote_average : ""}
-                <i className="fas fa-star" />
-              </span>
-            </div>
-            <div className="card__description">
-              {movie ? movie.overview.slice(0, 118) + "..." : ""}
+      <div className="movies-grid">
+        {movies.map((movie) => (
+          <div key={movie.id} className="cards" onClick={() => handleCardClick(movie.id)}>
+            <img
+              className="cards__img"
+              src={`https://image.tmdb.org/t/p/original${movie ? movie.poster_path : ""}`}
+              alt={movie.title}
+            />
+            <div className="cards__overlay">
+              <div className="card__title">
+                {movie ? movie.original_title : ""}
+              </div>
+              <div className="card__runtime">
+                {movie ? movie.release_date : ""}
+                <span className="card__rating">
+                  {movie ? movie.vote_average : ""}
+                  <i className="fas fa-star" />
+                </span>
+              </div>
+              <div className="card__description">
+                {movie ? movie.overview.slice(0, 118) + "..." : ""}
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+          ))}
+      </div>
     </form>
   );
 };
