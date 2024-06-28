@@ -9,11 +9,11 @@ Welcome to The Film Project! This is a web application built using React.js that
 -   Create lists/collections on any given topic.
 
 ## Demo
+![image](https://github.com/pratiyk/the-film-project/assets/38837970/c03c27b3-12cc-4413-be1d-642cd7a523b7)
+
 ![image](https://github.com/pratiyk/the-film-project/assets/38837970/bfcbcac6-fd64-4432-acc6-cdcc446bcfa0)
 
 ![image](https://github.com/pratiyk/the-film-project/assets/38837970/15729cb8-86df-4d1b-94c6-59a2d0e9289c)
-
-
 
 
 
@@ -29,4 +29,3 @@ Welcome to The Film Project! This is a web application built using React.js that
 
 -   React.js: A JavaScript library for building user interfaces.
 -   React Router: Declarative routing for React applications.
--   Material-UI: React components for faster and easier web development.
