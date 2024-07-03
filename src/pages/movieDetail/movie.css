@@ -127,22 +127,29 @@ body {
     margin-bottom: 10px;
 }
 
+.movie__linkContainer {
+    margin-bottom: 10px;
+}
+
 .movie__Button {
-    position: relative;
     display: inline-block;
-    margin-right: 10px;
-    padding: 10px 15px;
-    background-color: #a788ef;
-    color: white;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1em;
-    text-decoration: none;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
     transition: background-color 0.3s;
 }
 
 .movie__Button:hover {
     background-color: #9579db;
 }
+
+.newTab {
+    margin-left: 5px;
+}
+
 
 .productionCompanyImage {
     display: inline-block;
