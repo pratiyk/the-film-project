@@ -1,125 +1,53 @@
-.cards {
-    display: inline-block;
-    transition: transform 0.2s;
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 0.5rem;
-    cursor: pointer;
-    min-width: 200px;
-    height: 300px;
-    z-index: 0;
-    color: white;
-    border: 1px solid rgb(99, 99, 99);
-}
-
-.cards:hover {
-    transform: scale(1.2);
-    z-index: 1000;
-    box-shadow:
-        rgba(0, 0, 0, 0.25) 0px 54px 55px,
-        rgba(0, 0, 0, 0.12) 0px -12px 30px,
-        rgba(0, 0, 0, 0.12) 0px 4px 6px,
-        rgba(0, 0, 0, 0.17) 0px 12px 13px,
-        rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-.cards__img {
-    height: 300px;
-}
-
-.cards__overlay {
-    position: absolute;
-    padding: 0 1rem 1rem 1rem;
-    bottom: 0px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: flex-end;
-    background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 1));
-    opacity: 0;
-    transition: opacity 0.2s;
-}
-
-.cards__overlay:hover {
-    opacity: 1;
-}
-
-.card__title {
-    font-weight: 900;
-    font-size: 1rem;
-    margin-bottom: 0.4rem;
-    color: white;
-}
-
-.card__runtime {
-    font-size: 0.75rem;
-    margin-bottom: 0.25rem;
-}
-
-.card__rating {
-    float: right;
-    color: white;
-}
-
-.card__description {
-    font-style: italic;
-    font-size: 0.75rem;
-    margin-bottom: 0.25rem;
-    color: white;
-}
-
-.movies-grid{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 1rem;
-}
-
+/* src/components/SearchBar/SearchBar.css */
 .search-box {
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-.search-box input,
-.search-box button {
-    outline: none;
-    border: none;
-    border-radius: 10px;
-    text-align: center;
-    font-family: "Courier New", Courier, monospace;
+    background-color: #fff;
+    border-radius: 20px; /* Rounded corners for a sleek look */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    padding: 5px; /* Padding around the elements */
+    margin: 1rem auto; /* Centering the search bar with auto margins */
+    width: 100%; /* Full width of the container */
+    max-width: 600px; /* Extended width for more prominence */
+    position: relative;
 }
 
 .search-box input {
-    height: 25px;
-    width: 25%;
-    padding: 0 10px;
-    box-shadow: 1px 1px 6px -2px grey;
-    font-size: 17px;
-}
-
-.search-box button {
-    padding: 0 25px;
-    height: 25px;
-    margin-left: 10px;
-    color: white;
-    background-color: #9579db;
-    cursor: pointer;
-    font-weight: bolder;
+    height: 35px; /* Consistent height */
+    width: 100%; /* Full width inside the container */
+    padding: 0 15px; /* Padding inside the input */
+    border: none;
+    border-radius: 20px; /* Match the container’s rounded corners */
+    font-size: 14px; /* Slightly smaller text size */
+    box-shadow: none; /* Remove default shadow */
+    outline: none; /* Remove default outline */
 }
 
 .search-box input::placeholder {
-    font-size: 16px;
+    color: #aaa; /* Placeholder text color */
+    font-size: 14px; /* Placeholder text size */
 }
 
 .search-box input:focus {
-    outline: none;
-    border: 2px solid #9579db;
-    box-shadow: 0 0 5px #9579db;
+    border: 2px solid #9579db; /* Subtle border on focus */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Light shadow on focus */
+}
+
+.search-box button {
+    height: 35px; /* Match input height */
+    padding: 0 20px; /* Horizontal padding for button */
+    margin-left: 10px; /* Space between input and button */
+    color: #fff; /* White text */
+    background-color: #9579db; /* Blue color for button */
+    border: none;
+    border-radius: 20px; /* Match the container’s rounded corners */
+    cursor: pointer;
+    font-size: 14px; /* Matching font size with input */
+    font-weight: 500; /* Slightly lighter font weight */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
 }
 
 .search-box button:hover {
-    background-color: #7d5fae;
+    background-color: #7d5fae; /* Darker shade on hover */
+    transform: scale(1.02); /* Slightly enlarge button on hover */
 }
