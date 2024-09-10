@@ -11,7 +11,7 @@ import SearchResults from "./components/SearchResults/SearchResults"; // Import 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename="/the-film-project">
+      <Router basename="/the-film-project">
         <Header />
         <Routes>
           <Route index element={<Home />} />
@@ -20,7 +20,7 @@ function App() {
           <Route path="search" element={<SearchResults />} /> {/* Add route for search results */}
           <Route path="/*" element={<h1>Error Page</h1>} />
         </Routes>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 }
