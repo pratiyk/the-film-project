@@ -21,7 +21,7 @@ const SearchBar = () => {
         name="query"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        placeholder="Search for movies..."
+        placeholder="Search for Films..."
       />
       <button type="submit">Search</button>
     </form>

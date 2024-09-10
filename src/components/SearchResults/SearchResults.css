@@ -1,0 +1,103 @@
+/* src/components/SearchResults/SearchResults.css */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.search-results {
+    width: 85%;
+    margin: 20px auto;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.search-results h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.movies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.posterImage {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.posterImage:hover {
+    transform: scale(1.05);
+}
+
+.posterImage > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 0.5rem;
+}
+
+.posterImage__overlay {
+    position: absolute;
+    padding: 5rem;
+    bottom: 0px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 1));
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.posterImage:hover .posterImage__overlay {
+    opacity: 1;
+}
+
+.posterImage__title {
+    font-weight: 900;
+    font-size: 2em; /* Adjusted for better readability */
+    margin-bottom: 0.4rem;
+    text-align: left;
+    color: #ffffff;
+}
+
+.posterImage__runtime {
+    font-size: 1.5em; /* Adjusted for better readability */
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.posterImage__rating {
+    font-size: 1.5em;
+    color: #ffba00;
+    margin-left: 3rem;
+}
+
+.posterImage__description {
+    font-style: italic;
+    font-size: 1em;
+    margin-bottom: 0.25rem;
+    display: flex;
+    text-align: left;
+    width: 50%;
+    color: #ffffff;
+}

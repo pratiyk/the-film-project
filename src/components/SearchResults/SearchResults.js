@@ -30,7 +30,6 @@ const SearchResults = () => {
 
   return (
     <div className="search-results">
-      <h1>Search Results for "{query}"</h1>
       <div className="movies-grid">
         {movies.map((movie) => (
           <div key={movie.id} className="cards" onClick={() => handleCardClick(movie.id)}>
