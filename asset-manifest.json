@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/the-film-project/static/css/main.4774643e.css",
-    "main.js": "/the-film-project/static/js/main.5f69f4a3.js",
+    "main.js": "/the-film-project/static/js/main.6e692440.js",
     "static/media/logo.png": "/the-film-project/static/media/logo.5bab3b30161dda5f259c.png",
     "index.html": "/the-film-project/index.html",
     "main.4774643e.css.map": "/the-film-project/static/css/main.4774643e.css.map",
-    "main.5f69f4a3.js.map": "/the-film-project/static/js/main.5f69f4a3.js.map"
+    "main.6e692440.js.map": "/the-film-project/static/js/main.6e692440.js.map"
   },
   "entrypoints": [
     "static/css/main.4774643e.css",
-    "static/js/main.5f69f4a3.js"
+    "static/js/main.6e692440.js"
   ]
 }
