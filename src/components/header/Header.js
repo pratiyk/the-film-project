@@ -12,8 +12,8 @@ const Header = () => {
                 <Link to="/">
                     <img className="header__icon" src={logo} alt="Logo" height="75px" />
                 </Link>
-                <Link to="/movies/now_playing" style={{ textDecoration: 'none' }}>
-                    <span>Now Playing</span>
+                <Link to="/movies/popular" style={{ textDecoration: 'none' }}>
+                    <span>Popular</span>
                 </Link>
                 <Link to="/movies/top_rated" style={{ textDecoration: 'none' }}>
                     <span>Top Rated</span>
