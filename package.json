@@ -1,6 +1,6 @@
 {
     "name": "the-film-project",
-    "homepage": "https://pratiyk.github.io/the-film-project",
+    "homepage": ".",
     "version": "0.1.0",
     "private": false,
     "dependencies": {
