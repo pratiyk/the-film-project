@@ -7,14 +7,18 @@ Welcome to The Film Project! This is a web application built using React.js that
 -   Keep a watchlist of films you’d like to see.
 -   Rate, review and tag films.
 -   Create lists/collections on any given topic.
+-   List of similar films is provided.
 
 ## Demo
-![image](https://github.com/pratiyk/the-film-project/assets/38837970/c03c27b3-12cc-4413-be1d-642cd7a523b7)
+![image](https://github.com/user-attachments/assets/6c031f2f-95bb-47e1-93f1-eaeed2094c6b)
 
-![image](https://github.com/pratiyk/the-film-project/assets/38837970/bfcbcac6-fd64-4432-acc6-cdcc446bcfa0)
+![image](https://github.com/user-attachments/assets/ab3eebcc-b9dc-46f8-9cae-ab3b2a319d05)
 
-![image](https://github.com/pratiyk/the-film-project/assets/38837970/15729cb8-86df-4d1b-94c6-59a2d0e9289c)
+![image](https://github.com/user-attachments/assets/7fff6574-275b-4b29-a9fb-a0a1f7553d6c)
 
+![image](https://github.com/user-attachments/assets/3bc7f534-ac32-4416-97f1-dea838736623)
+
+![image](https://github.com/user-attachments/assets/8d9684c0-d1c5-4aa9-b363-ba3644fcf4b3)
 
 
 ## Installation
