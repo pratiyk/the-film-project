@@ -252,3 +252,53 @@ body {
     transform: scale(1.05); /* Slightly enlarge the container on hover */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
 }
+
+/* Adjusting action buttons to match the page's theme */
+.movie__actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.movie__actionButton {
+    position: relative;
+    cursor: pointer;
+    font-size: 24px;
+    color: #ffffff; /* White text to match the page theme */
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-family: 'Courier New', Courier, monospace; /* Matching font */
+    background-color: transparent; /* No background, to keep it clean */
+    padding: 10px;
+    border: 2px solid #ffffff; /* White border to create a button-like effect */
+    border-radius: 8px;
+}
+
+.movie__actionButton:hover {
+    color: #9579db; /* Consistent hover color */
+    transform: translateY(-2px); /* Lift the button on hover */
+    border-color: #9579db; /* Change border color on hover */
+}
+
+/* Tooltip styling */
+.movie__actionButton::after {
+    content: attr(title);
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333; /* Tooltip background */
+    color: #ffffff; /* White text */
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace; /* Matching font */
+    white-space: nowrap;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Smooth transition for tooltip */
+}
+
+.movie__actionButton:hover::after {
+    display: block;
+    opacity: 1; /* Tooltip fades in smoothly */
+}

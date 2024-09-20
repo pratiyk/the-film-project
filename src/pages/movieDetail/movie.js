@@ -43,18 +43,6 @@ const Movie = () => {
         navigate(`/movie/${movieId}`);
     };
 
-    const addToWatched = () => {
-        // Logic to add the movie to "Watched" list
-    };
-
-    const addToWatchlist = () => {
-        // Logic to add the movie to "Watchlist"
-    };
-
-    const likeMovie = () => {
-        // Logic to like the movie
-    };
-
     return (
         <div className="movie">
             <div className="movie__intro">
@@ -108,15 +96,15 @@ const Movie = () => {
 
                     {/* Add Watched/Watchlist/Like Section */}
                     <div className="movie__actions">
-                        <button className="movie__actionButton" onClick={addToWatched}>
-                            <i className="fas fa-eye"></i> Watched
-                        </button>
-                        <button className="movie__actionButton" onClick={addToWatchlist}>
-                            <i className="fas fa-bookmark"></i> Watchlist
-                        </button>
-                        <button className="movie__actionButton" onClick={likeMovie}>
-                            <i className="fas fa-heart"></i> Like
-                        </button>
+                        <span className="movie__actionButton" title="Watched">
+                            <i className="fas fa-eye"></i>
+                        </span>
+                        <span className="movie__actionButton" title="Watchlist">
+                            <i className="fas fa-bookmark"></i>
+                        </span>
+                        <span className="movie__actionButton" title="Like">
+                            <i className="fas fa-heart"></i>
+                        </span>
                     </div>
 
                     <div className="movie__detailRightBottom">
