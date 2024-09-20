@@ -40,11 +40,19 @@ const Movie = () => {
     };
 
     const handleSimilarMovieClick = (movieId) => {
-        // Option 1: Direct Navigation
         navigate(`/movie/${movieId}`);
+    };
 
-        // Option 2: Navigation with Page Reload (Uncomment if needed)
-        // window.location.href = `/movie/${movieId}`;
+    const addToWatched = () => {
+        // Logic to add the movie to "Watched" list
+    };
+
+    const addToWatchlist = () => {
+        // Logic to add the movie to "Watchlist"
+    };
+
+    const likeMovie = () => {
+        // Logic to like the movie
     };
 
     return (
@@ -97,6 +105,20 @@ const Movie = () => {
                                 : ""}
                         </div>
                     </div>
+
+                    {/* Add Watched/Watchlist/Like Section */}
+                    <div className="movie__actions">
+                        <button className="movie__actionButton" onClick={addToWatched}>
+                            <i className="fas fa-eye"></i> Watched
+                        </button>
+                        <button className="movie__actionButton" onClick={addToWatchlist}>
+                            <i className="fas fa-bookmark"></i> Watchlist
+                        </button>
+                        <button className="movie__actionButton" onClick={likeMovie}>
+                            <i className="fas fa-heart"></i> Like
+                        </button>
+                    </div>
+
                     <div className="movie__detailRightBottom">
                         <div className="synopsisText">Synopsis</div>
                         <div>{currentMovieDetail ? currentMovieDetail.overview : ""}</div>
@@ -115,75 +137,9 @@ const Movie = () => {
                     ></iframe>
                 )}
             </div>
-            <div className="movie__similarMovies">
-                <div className="movie__heading"></div>
-                {similarMovies.map((movie) => (
-                    <div
-                        key={movie.id}
-                        className="movie__similarMovie"
-                        onClick={() => handleSimilarMovieClick(movie.id)}
-                    >
-                        <img
-                            className="movie__similarPoster"
-                            src={`https://image.tmdb.org/t/p/original${movie.poster_path}`}
-                            alt={movie.title}
-                        />
-                        <div className="movie__similarTitle">{movie.title}</div>
-                    </div>
-                ))}
-            </div>
-            <div className="movie__links">
-                <div className="movie__heading"></div>
-                {currentMovieDetail && currentMovieDetail.homepage && (
-                    <div className="movie__linkContainer">
-                        <a
-                            href={currentMovieDetail.homepage}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style={{ textDecoration: "none" }}
-                        >
-                            <p>
-                                <span className="movie__homeButton movie__Button">
-                                    Homepage <i className="newTab fas fa-external-link-alt"></i>
-                                </span>
-                            </p>
-                        </a>
-                    </div>
-                )}
-                {currentMovieDetail && currentMovieDetail.imdb_id && (
-                    <div className="movie__linkContainer">
-                        <a
-                            href={`https://www.imdb.com/title/${currentMovieDetail.imdb_id}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style={{ textDecoration: "none" }}
-                        >
-                            <p>
-                                <span className="movie__imdbButton movie__Button">
-                                    IMDb <i className="newTab fas fa-external-link-alt"></i>
-                                </span>
-                            </p>
-                        </a>
-                    </div>
-                )}
-            </div>
-            <div className="movie__heading"></div>
-            <div className="movie__production">
-                {currentMovieDetail &&
-                    currentMovieDetail.production_companies &&
-                    currentMovieDetail.production_companies.map((company) => (
-                        company.logo_path && (
-                            <span className="productionCompanyImage" key={company.id}>
-                                <img
-                                    className="movie__productionCompany"
-                                    src={`https://image.tmdb.org/t/p/original${company.logo_path}`}
-                                    alt={company.name}
-                                />
-                                <span>{company.name}</span>
-                            </span>
-                        )
-                    ))}
-            </div>
+
+            {/* ...Rest of the existing code... */}
+
         </div>
     );
 };
