@@ -253,7 +253,6 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
 }
 
-/* Adjusting action buttons to match the page's theme */
 .movie__actions {
     display: flex;
     gap: 15px;
@@ -263,20 +262,17 @@ body {
 .movie__actionButton {
     position: relative;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 20px; /* Smaller font size */
     color: #ffffff; /* White text to match the page theme */
     transition: color 0.3s ease, transform 0.3s ease;
     font-family: 'Courier New', Courier, monospace; /* Matching font */
-    background-color: transparent; /* No background, to keep it clean */
-    padding: 10px;
-    border: 2px solid #ffffff; /* White border to create a button-like effect */
-    border-radius: 8px;
+    background-color: transparent; /* No background to keep it clean */
+    padding: 5px; /* Reduced padding */
 }
 
 .movie__actionButton:hover {
     color: #9579db; /* Consistent hover color */
     transform: translateY(-2px); /* Lift the button on hover */
-    border-color: #9579db; /* Change border color on hover */
 }
 
 /* Tooltip styling */
